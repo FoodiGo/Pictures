@@ -19,12 +19,12 @@
 *.rar
 *.tar
 *.zip
+*.env
 
 # Not needed #
 ##############
 node_modules
 package-lock.json
-bundle.js
 coverage
 
 # Logs and databases #
@@ -32,6 +32,7 @@ coverage
 *.log
 *.sql
 *.sqlite
+.env
 
 # OS generated files #
 ######################
@@ -42,3 +43,8 @@ coverage
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
